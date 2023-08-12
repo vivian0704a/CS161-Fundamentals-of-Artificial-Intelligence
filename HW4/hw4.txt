@@ -1,0 +1,14 @@
+Name: Yu-Wei Chen, UID: 205928946
+
+1. No
+2. Yes
+3. The graph can only be solved if we color with at least 4 colors.
+Sample solution:
+node1: blue
+node2: red
+node3: blue
+node4: yellow
+node5: red
+node6: green
+node7: yellow
+4. Minimum number of colors required to color the 2nd graph is 8.
