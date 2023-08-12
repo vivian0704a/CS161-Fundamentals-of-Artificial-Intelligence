@@ -1,0 +1,83 @@
+Name: Yu-Wei Chen, UID: 205928946
+
+1. Question 1
+(1) Test cases of first 10 numbers:
+[1]> (load "C:/Users/Asus/Desktop/hw1.lsp")
+;; Loading file C:\Users\Asus\Desktop\hw1.lsp ...
+;; Loaded file C:\Users\Asus\Desktop\hw1.lsp
+T
+[2]> (SEQ 0)
+1
+[3]> (SEQ 1)
+1
+[4]> (SEQ 2)
+1
+[5]> (SEQ 3)
+3
+[6]> (SEQ 4)
+5
+[7]> (SEQ 5)
+9
+[8]> (SEQ 6)
+17
+[9]> (SEQ 7)
+31
+[10]> (SEQ 8)
+57
+[11]> (SEQ 9)
+105
+[12]> (SEQ 10)
+193
+
+(2) When I tried (SEQ 100), the program kept running without returning an answer. 
+The function recursively calls itself when N>2, which results in many repeated steps and exponential runtime.
+
+2. Question 2
+Test cases of first 10 numbers:
+[1]> (load "C:/Users/Asus/Desktop/hw1.lsp")
+;; Loading file C:\Users\Asus\Desktop\hw1.lsp ...
+;; Loaded file C:\Users\Asus\Desktop\hw1.lsp
+T
+[2]> (SUMS 0)
+0
+[3]> (SUMS 1)
+0
+[4]> (SUMS 2)
+0
+[5]> (SUMS 3)
+2
+[6]> (SUMS 4)
+4
+[7]> (SUMS 5)
+8
+[8]> (SUMS 6)
+16
+[9]> (SUMS 7)
+30
+[10]> (SUMS 8)
+56
+[11]> (SUMS 9)
+104
+[12]> (SUMS 10)
+192
+
+3. Question 3 
+Implementation:
+[1]> (load "C:/Users/Asus/Desktop/hw1.lsp")
+;; Loading file C:\Users\Asus\Desktop\hw1.lsp ...
+;; Loaded file C:\Users\Asus\Desktop\hw1.lsp
+T
+[2]> (ANON '42)
+0
+[3]> (ANON 'FOO)
+0
+[4]> (ANON '(((L E) F) T))
+(((0 0) 0) 0)
+[5]> (ANON '(5 FOO 3.1 -0.2))
+(0 0 0 0)
+[6]> (ANON '(1 (FOO 3.1) -0.2))
+(0 (0 0) 0)
+[7]> (ANON '(((1 2) (FOO 3.1)) (BAR -0.2)))
+(((0 0) (0 0)) (0 0))
+[8]> (ANON '(R (I (G (H T)))))
+(0 (0 (0 (0 0))))
